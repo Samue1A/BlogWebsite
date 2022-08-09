@@ -112,8 +112,8 @@ a {
     padding: 1rem;
 }
 
-.box:hover {
-    transform: scale(1.025);
+.boux:hover {
+    transform: scale(1.05);
 }
 
 #fencing {
@@ -263,7 +263,7 @@ h3 {
     .resume {
         display: grid;
         grid-template-columns: 45vw 45vw;
-        column-gap: 5vw";
+        column-gap: 5vw;
     }
     col1,
     col2 {
