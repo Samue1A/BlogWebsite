@@ -1,0 +1,164 @@
+.back {
+    background-image: url(../resources/jani-kaasinen-7VGzV09YnvA-unsplash.jpg);
+}
+
+article {
+    box-sizing: content-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 2rem;
+    margin-top: 0.5rem;
+    margin: 1rem;
+    color: white;
+}
+
+h1{
+    display: none;
+}
+
+h2 {
+    font-size: 170%;
+    margin-top: 3.5rem;
+}
+
+dt{
+    font-weight: bold;
+    font-size: 150%;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+dd {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+}
+.link-arrow {
+    font-size: 100%;
+    color: rgb(192, 66, 17);
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.link-arrow::after {
+    content: "==>";
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+
+.quote {
+    color: grey;
+    font-style: italic;
+}
+
+#no_up {
+    margin-top: 0;
+}
+
+#third {
+    margin-right: 2vw;
+}
+
+
+
+#black {
+    background-color: black;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.foots {
+    color: white;
+    padding: 0.5rem;
+    display: inline;
+    margin: auto;
+    justify-items: center;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 33.3vw 33.3vw 33.3vw;
+    width: 100%;
+}
+
+@media screen and (min-width: 800px){
+    .intro {
+        box-sizing: content-box;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+    }
+    .intro p {
+        padding: 1rem;
+    }
+
+    .quote {
+        font-size: 150%;
+    }
+}
+
+.icon_nav {
+    width: 1.5rem;
+    fill: white;
+    margin: 1.5rem;
+    margin-right: 2rem;
+}
+
+.nav_bar {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.nav_items {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+.nav__item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #222;
+  }
+
+
+.nav_item:only-child {
+    font-size: 150%;
+    z-index: 1000;
+    color: white;
+    padding: 0.5rem;
+}
+
+.nav_item:hover{
+    z-index: 10;
+    font-size: 110%;
+}
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+}
+
+
+
+spn {
+    display: inline-block;
+}

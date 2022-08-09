@@ -1,0 +1,103 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+.link-arrow {
+    color: rgb(216, 80, 26);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+.link-arrow::after {
+    content: "==>";
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+/* badges */
+.badge {
+    background-color: rgb(41, 123, 230);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
+
+/* lists */
+/* to apply two classes: class:"class1 class2" */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list--inline {
+    display: inline-block;
+    margin: 2rem;
+}
+
+/*failed class but can be modified and used
+if you manage touse <i> put a class on it then use fill: ...;
+on the class to change colour*/
+.list--tick {
+    list-style-image: url(../resources/check-solid.svg);
+    padding-left: 3rem;
+}
+
+.list--tick .list--item {
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+/*buttons */
+
+.button {
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+
+.btn {
+    background-color: dodgerblue;
+}
+
+/* input groups: input fields with buttons inside */
+.input_group {
+    border: 1px solid #cbcdd7;
+    border-radius: 20px;
+    display: flex;
+}
+
+.input_group .input{
+    border: 0;
+    flex-grow: 1;
+}
+
+.input_group .button {
+    margin: 4px;
+}
+
+/* input */
+.input {
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: 0;
+}
+
+::placeholder {
+    color: #cbcdd7;
+}
