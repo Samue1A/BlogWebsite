@@ -1,0 +1,115 @@
+.back {
+    background-image: url(../resources/study_mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 140%;
+}
+.top {
+    font-weight: bold;
+    font-size: 150%;
+    padding: 1rem;
+}
+
+.all {
+    margin: 00.5rem;
+}
+
+.icon_nav {
+    width: 1.5rem;
+    fill: white;
+    margin: 1.5rem;
+    margin-right: 2rem;
+}
+
+.nav_bar {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.nav_items {
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0.5rem;
+}
+.nav__item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #222;
+  }
+
+
+.nav_item:only-child {
+    font-size: 150%;
+    z-index: 1000;
+    color: white;
+    padding: 0.5rem;
+}
+
+.nav_item:hover{
+    z-index: 10;
+    font-size: 170%;
+}
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+}
+
+#black {
+    background-color: black;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.foots {
+    color: white;
+    padding: 0.5rem;
+    display: inline;
+    margin: auto;
+    justify-items: center;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 33.3vw 33.3vw 33.3vw;
+    width: 100%;
+}
+
+li {
+    font-size:150%;
+    margin-bottom: 0.5rem;
+}
+
+.white {
+    color: white;
+}
+
+@media screen and (min-width: 1024px) {
+    .back {
+        background-image: url(../resources/studying_page.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .white {
+        color: black;
+    }
+}
+
