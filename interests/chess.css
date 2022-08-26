@@ -11,10 +11,6 @@ article {
     color: white;
 }
 
-h1{
-    display: none;
-}
-
 h2 {
     font-size: 170%;
     margin-top: 3.5rem;
@@ -32,11 +28,6 @@ dd {
     font-weight: 500;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 200%;
-}
 .link-arrow {
     font-size: 100%;
     color: rgb(192, 66, 17);
@@ -64,30 +55,7 @@ a {
     margin-top: 0;
 }
 
-#third {
-    margin-right: 2vw;
-}
 
-
-
-#black {
-    background-color: black;
-    padding: 1rem;
-    justify-content: center;
-}
-
-.foots {
-    color: white;
-    padding: 0.5rem;
-    display: inline;
-    margin: auto;
-    justify-items: center;
-}
-.footer {
-    display: grid;
-    grid-template-columns: 33.3vw 33.3vw 33.3vw;
-    width: 100%;
-}
 
 @media screen and (min-width: 800px){
     .intro {
@@ -102,59 +70,6 @@ a {
     .quote {
         font-size: 150%;
     }
-}
-
-.icon_nav {
-    width: 1.5rem;
-    fill: white;
-    margin: 1.5rem;
-    margin-right: 2rem;
-}
-
-.nav_bar {
-    z-index: 11;
-    position: fixed;
-    top: 0;
-    background-color: black;
-    padding: 5px;
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-.nav_items {
-    list-style-type: none;
-    padding: 0.5rem;
-}
-.nav__item {
-    padding: 0.5rem 2rem;
-    border-bottom: 1px solid #222;
-  }
-
-
-.nav_item:only-child {
-    font-size: 150%;
-    z-index: 1000;
-    color: white;
-    padding: 0.5rem;
-}
-
-.nav_item:hover{
-    z-index: 10;
-    font-size: 110%;
-}
-.collapsible__content {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-.collapsible--expanded .collapsible__content {
-    max-height: 100vh;
-    opacity: 1;
 }
 
 
